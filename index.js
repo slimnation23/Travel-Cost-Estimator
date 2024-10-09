@@ -9,5 +9,5 @@ btn.addEventListener("click", () => calculateSum(distance.value, average.value, 
 function calculateSum(distance, average, fuelPrice) {
   const totalFuel = (average * distance) / 100;
   const totalCost = Math.floor(totalFuel * fuelPrice);
-  return result.innerHTML = '€' + totalCost
+  return result.innerHTML = totalCost
 }
