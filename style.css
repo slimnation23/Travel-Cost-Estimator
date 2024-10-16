@@ -4,10 +4,14 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+}
+
+.bg-wrapper {
+  padding-top: 50px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  gap: 50px;
 }
 
 h1 {
