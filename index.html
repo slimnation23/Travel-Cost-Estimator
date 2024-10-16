@@ -18,25 +18,48 @@
     <title>Travel Cost Estimator</title>
   </head>
   <body>
-    <div>
-      <h1>Travel Cost Estimator</h1>
-      <div class="wrapper">
-        <label for="distance">
-          Total Distance (km)
-          <input id="distance" type="number" />
-        </label>
-        <label for="average">
-          Average Fuel Consumption (liters per 100 km)
-          <input id="average" type="number" />
-        </label>
-        <label for="price">
-          Current Fuel Price (per liter)
-          <input id="price" type="number" />
-        </label>
-        <button id="btn">Calculate</button>
+    <div class="bg-wrapper">
+      <div>
+        <h1>Average fuel consumption</h1>
+        <div class="wrapper">
+          <label for="liters">
+            How many liters of fuel did you fill up?
+            <input id="liters" type="number" />
+          </label>
+          <label for="kilometers">
+            How many kilometers did you drive?
+            <input id="kilometers" type="number" />
+          </label>
+          <button id="calculate">Calculate</button>
+        </div>
+        <h3>Average fuel / 100 km: 
+          <span id="liters-result"></span>
+        </h3>
       </div>
-      <h3>Travel Cost Summary: <span id="result"></span></h3>
+
+      <div>
+        <h1>Travel cost estimator</h1>
+        <div class="wrapper">
+          <label for="distance">
+            Total Distance (km)
+            <input id="distance" type="number" />
+          </label>
+          <label for="average">
+            Average Fuel Consumption (liters per 100 km)
+            <input id="average" type="number" />
+          </label>
+          <label for="price">
+            Current Fuel Price (per liter)
+            <input id="price" type="number" />
+          </label>
+          <button id="btn">Calculate</button>
+        </div>
+        <h3>Travel Cost Summary: 
+          <span id="cost-result"></span>
+        </h3>
+      </div>
     </div>
+    
 
     <script src="index.js"></script>
   </body>
