@@ -49,6 +49,12 @@ input:focus {
   border-color: #007bff;
 }
 
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
 button {
   width: 100%;
   padding: 12px;
@@ -62,7 +68,19 @@ button {
   margin-top: 10px;
 }
 
-button:hover {
+.clear {
+  background-color: #ababab;
+}
+
+.clear:hover {
+  background-color: #6e6e6e;
+}
+
+#calculate:hover {
+  background-color: #0056b3;
+}
+
+#btn:hover {
   background-color: #0056b3;
 }
 
