@@ -30,7 +30,10 @@
             How many kilometers did you drive?
             <input id="kilometers" type="number" />
           </label>
-          <button id="calculate">Calculate</button>
+          <div class="btn-wrapper">
+            <button id="calculate">Calculate</button>
+            <button class="clear" id="clear-average">Clear</button>
+          </div>
         </div>
         <h3>Average fuel / 100 km: 
           <span id="liters-result"></span>
@@ -52,7 +55,10 @@
             Current Fuel Price (per liter)
             <input id="price" type="number" />
           </label>
-          <button id="btn">Calculate</button>
+          <div class="btn-wrapper">
+            <button id="btn">Calculate</button>
+            <button class="clear" id="clearCost">Clear</button>
+          </div>
         </div>
         <h3>Travel Cost Summary: 
           <span id="cost-result"></span>
