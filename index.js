@@ -28,7 +28,7 @@ function calculateSum(distance, average, fuelPrice) {
 
 function calculateFuel(liters, kilometers) {
   if (kilometers > 0) {
-    const averageFuel = Math.floor((liters / kilometers) * 100);
+    const averageFuel = ((liters / kilometers) * 100).toFixed(1);
     return (litersResult.innerHTML = averageFuel + " liters");
   } else {
     return (litersResult.innerHTML = `<div style="color:red; font-weight:400; font-size: 14px">Invalid value</div>`);
